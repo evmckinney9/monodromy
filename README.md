@@ -1,3 +1,11 @@
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+> [!NOTE]
+> The functionality of this fork is moving. For a more comprehensive and functional wrap over `monodromy` see instead `GULPS`. I am working to migrate GULPS code to rely on the primary `monodromy` code base rather than my own fork.
+>
+> https://github.com/evmckinney9/gulps
+> 
+⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
+____
 # `monodromy`
 
 Computations in the monodromy polytope for quantum gate sets.

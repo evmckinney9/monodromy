@@ -13,6 +13,7 @@ from functools import reduce
 import math  # for gcd
 from operator import itemgetter
 from os import getenv
+from shutil import which
 from subprocess import Popen, PIPE
 from typing import List
 
@@ -34,12 +35,7 @@ def check_for_lrs():
     """
     Checks whether `lrs` is findable and executable.
     """
-    try:
-        proc = Popen([LRS_PATH], stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        proc.communicate(b"")
-        return True
-    except Exception:  # FileNotFoundError, for instance
-        return False
+    return which(LRS_PATH) is not None
 
 
 class LRSBackend(Backend):
